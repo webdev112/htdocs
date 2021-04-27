@@ -30,4 +30,4 @@ Route::get('/services', function () {
 Route::get('/about', function () {
     return view('about');
 });
-Route::post('/contacts/submit', 'ContactController@submit') -> name('form-submit');
+Route::post('/contacts/submit', 'App\Http\Controllers\ContactController@submit') -> name('form-submit');
